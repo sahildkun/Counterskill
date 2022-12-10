@@ -12,20 +12,20 @@ function App() {
   return (
     <>
     
-    <div className='bg-gray-500 h-[100vh] p-[15rem]'>
+    <div className='bg-white h-[100vh] p-[15rem] mx-auto'>
     {first%2 === 0 ?
-      <div className="flex flex-col w-56 h-56 bg-red-700 rounded-sm shadow-2xl mx-auto items-center gap-y-10 ">
-      <p className='text-green-400 mx-auto pt-5 text-2xl font-bold '>Count</p>
-       <p className='text-3xl' >{first}</p>
-       <button className='bg-black text-white p-2 rounded-md border-red-800 border-4' onClick={handleClick}>click</button>
+      <div className="flex flex-col w-64 h-64 bg-red-600 rounded-3xl shadow-2xl mx-auto items-center gap-y-10 ">
+      <p className='text-green-400 mx-auto pt-10 text-2xl font-bold '>Count</p>
+       <p className='text-3xl text-white font-serif' >{first}</p>
+       <button className='bg-black font-mono text-white p-2 rounded-md border-red-400 border-4' onClick={handleClick}>click</button>
      </div>
     :
 
    
-      <div className="flex flex-col w-56 h-56 bg-green-400 rounded-sm shadow-2xl mx-auto items-center gap-y-10 ">
-      <p className='text-red-700 mx-auto pt-5 text-2xl font-bold '>Count</p>
-       <p className='text-3xl' >{first}</p>
-       <button className='bg-black text-white p-2 rounded-md border-green-300 border-4' onClick={handleClick}>click</button>
+      <div className="flex flex-col w-64 h-64 bg-green-400 rounded-3xl shadow-2xl mx-auto items-center gap-y-10 ">
+      <p className='text-red-700 mx-auto pt-10 text-2xl font-bold  '>Count</p>
+       <p className='text-3xl text-white font-serif' >{first}</p>
+       <button className='bg-black  font-mono text-white p-2 rounded-md border-green-300 border-4' onClick={handleClick}>click</button>
      </div>
     
 }
